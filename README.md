@@ -4,9 +4,13 @@
 
 ###Introduction & Overview
 [Introduction by Ramon Victor](http://ramonvictor.github.io/protractor/slides/#/)
+
 [Practical End-to-End Testing with Protractor](http://www.ng-newsletter.com/posts/practical-protractor.html)
+
 [Get Hands-on with Protractor in 3 Steps](http://www.thoughtworks.com/de/insights/blog/hands-protractor-3-steps)
+
 [An Introduction to AngularJS End to End Testing with Protractor - Youtube](https://www.youtube.com/watch?v=idb6hOxlyb8)
+
 
 ###Doc files:
 [Github](https://github.com/angular/protractor/tree/master/docs)

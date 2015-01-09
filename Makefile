@@ -19,3 +19,8 @@ run-drone-tests:
 	sudo start xvfb
 	protractor tests/e2e/protractor.drone.conf.js
 
+run-saucelabs-tests:
+	npm install protractor -g
+	webdriver-manager update
+	sudo start xvfb
+	protractor tests/e2e/protractor.saucelabs.conf.js
