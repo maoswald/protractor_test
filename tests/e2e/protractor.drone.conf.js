@@ -14,9 +14,7 @@ exports.config = {
         }
     ],
 
-    suites: {
-        full: 'tests/e2e/**/*.js'
-    }
+    specs: ['**/*.js']
 
     //onPrepare: function() {
     //    //set window size, maybe good for responsive sizes
