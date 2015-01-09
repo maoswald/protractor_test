@@ -2,14 +2,20 @@
 
 ###Test of the testframework [Protractor](http://angular.github.io/protractor/#/)
 
-###Introduction
+###Introduction & Overview
 [Introduction by Ramon Victor](http://ramonvictor.github.io/protractor/slides/#/)
+[Practical End-to-End Testing with Protractor](http://www.ng-newsletter.com/posts/practical-protractor.html)
+[Get Hands-on with Protractor in 3 Steps](http://www.thoughtworks.com/de/insights/blog/hands-protractor-3-steps)
+[An Introduction to AngularJS End to End Testing with Protractor - Youtube](https://www.youtube.com/watch?v=idb6hOxlyb8)
 
-###Config overview:
+###Config file:
 [Config file overview](https://github.com/angular/protractor/blob/master/docs/referenceConf.js)
 
 ###Debugging
 [Debugging possibilities](https://github.com/angular/protractor/blob/master/docs/debugging.md)
+
+###CI
+[Sauce labs connection](http://lkrnac.net/blog/tag/protractor/)
 
 ##Setup
 ###Required
@@ -25,12 +31,6 @@ make install
 ```
 
 ###Run tests
-
-Run separately before
-
-```
-make test-env
-```
 
 Start all tests
 
