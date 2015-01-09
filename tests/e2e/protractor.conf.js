@@ -1,4 +1,5 @@
 exports.config = {
+    chromeDriver: '/usr/local/bin/chromedriver',
 
     capabilities: {
         'browserName': 'chrome'
