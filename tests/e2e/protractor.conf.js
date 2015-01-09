@@ -4,20 +4,9 @@ exports.config = {
         'browserName': 'chrome'
     },
 
-    //multiCapabilities: [
-    //    {
-    //        'browserName' : 'chrome'
-    //    },
-    //    {
-    //        'browserName' : 'firefox'
-    //    }
-    //],
-
     suites: {
         angular: 'angularjs_hp_test/*.js',
         protractor: 'protractor_demo_test/*.js'
-        //homepage: 'tests/e2e/homepage/**/*Spec.js',
-        //search: ['tests/e2e/contact_search/**/*Spec.js']
     },
 
     onPrepare: function() {

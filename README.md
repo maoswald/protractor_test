@@ -8,6 +8,9 @@
 [Get Hands-on with Protractor in 3 Steps](http://www.thoughtworks.com/de/insights/blog/hands-protractor-3-steps)
 [An Introduction to AngularJS End to End Testing with Protractor - Youtube](https://www.youtube.com/watch?v=idb6hOxlyb8)
 
+###Doc files:
+[Github](https://github.com/angular/protractor/tree/master/docs)
+
 ###Config file:
 [Config file overview](https://github.com/angular/protractor/blob/master/docs/referenceConf.js)
 
@@ -48,5 +51,13 @@ Start multiple test suites
 
 ```
 make run-test S=protractor,angular
+```
+
+##CI
+
+To run on [Drone.io](https://drone.io/) add the following line as Command at drone.io
+
+```
+make run-drone-tests
 ```
 
