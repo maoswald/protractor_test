@@ -2,10 +2,18 @@ exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
 
-    capabilities: {
-        'browserName': 'firefox'
-    },
-
+    multiCapabilities: [
+        {
+            'browserName' : 'chrome'
+        },
+        {
+            'browserName' : 'firefox'
+        },
+        {
+            'browserName': 'internet explorer'
+        }
+    ],
+    
     suites: {
         angular: 'angularjs_hp_test/*.js',
         protractor: 'protractor_demo_test/*.js'
