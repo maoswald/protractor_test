@@ -13,3 +13,9 @@ run-tests:
 run-test:
 	protractor tests/e2e/protractor.conf.js --suite $(S)
 
+run-drone-tests:
+	npm install protractor -g
+	webdriver-manager update
+	sudo start xvfb
+	protractor tests/e2e/protractor.drone.conf.js
+
