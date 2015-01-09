@@ -1,0 +1,22 @@
+{
+  "name": "protractor_test",
+  "version": "1.0.0",
+  "description": "test setup",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maoswald/protractor_test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maoswald/protractor_test/issues"
+  },
+  "homepage": "https://github.com/maoswald/protractor_test"
+}
