@@ -8,12 +8,9 @@ exports.config = {
         },
         {
             'browserName' : 'firefox'
-        },
-        {
-            'browserName': 'internet explorer'
         }
     ],
-    
+
     suites: {
         angular: 'angularjs_hp_test/*.js',
         protractor: 'protractor_demo_test/*.js'

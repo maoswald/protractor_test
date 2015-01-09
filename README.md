@@ -11,7 +11,6 @@
 
 [An Introduction to AngularJS End to End Testing with Protractor - Youtube](https://www.youtube.com/watch?v=idb6hOxlyb8)
 
-
 ###Doc files:
 [Github](https://github.com/angular/protractor/tree/master/docs)
 
@@ -20,9 +19,6 @@
 
 ###Debugging
 [Debugging possibilities](https://github.com/angular/protractor/blob/master/docs/debugging.md)
-
-###CI
-[Sauce labs connection](http://lkrnac.net/blog/tag/protractor/)
 
 ##Setup
 ###Required
@@ -64,4 +60,27 @@ To run on [Drone.io](https://drone.io/) add the following line as Command at dro
 ```
 make run-drone-tests
 ```
+
+To connect to sauce labs (sauce: [Sauce labs connection](http://lkrnac.net/blog/tag/protractor/)) add the following
+lines at drone.io
+
+As Environment Variables with your own username and access key
+
+```
+export SAUCE_USERNAME=
+export SAUCE_ACCESS_KEY=
+```
+
+As Commands
+
+```
+wget https://saucelabs.com/downloads/sc-latest-linux.tar.gz
+tar -xzvf sc-latest-linux.tar.gz
+cd sc-4.3-linux/bin
+./sc &
+cd ../..
+make run-saucelabs-tests
+kill %1
+```
+
 
