@@ -58,7 +58,7 @@ make run-test S=protractor,angular
 To run on [Drone.io](https://drone.io/) add the following line as Command at drone.io
 
 ```
-make run-drone-tests
+make drone-run-tests
 ```
 
 To connect to sauce labs (sauce: [Sauce labs connection](http://lkrnac.net/blog/tag/protractor/)) add the following
@@ -79,7 +79,7 @@ tar -xzvf sc-latest-linux.tar.gz
 cd sc-4.3-linux/bin
 ./sc &
 cd ../..
-make run-saucelabs-tests
+make drone-run-tests-saucelabs
 kill %1
 ```
 

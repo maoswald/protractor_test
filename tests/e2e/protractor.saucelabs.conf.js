@@ -2,36 +2,17 @@ exports.config = {
     sauceUser: process.env.SAUCE_USERNAME,
     sauceKey: process.env.SAUCE_ACCESS_KEY,
 
-    //multiCapabilities: [
-    //    {
-    //        'browserName' : 'chrome'
-    //    },
-    //    {
-    //        'browserName' : 'firefox'
-    //    }
-    //],
-
-
     capabilities: {
-        'browserName': 'chrome',
-        'browserName': 'firefox',
-        'browserName': 'internet explorer'
+        'browserName': 'chrome'
     },
 
-    suites: {
-        angular: 'angularjs_hp_test/*.js',
-        protractor: 'protractor_demo_test/*.js'
-    },
+    // Spec patterns are relative to the current working directly when
+    // protractor is called.
+    specs: ['**/*.js'],
 
-    onPrepare: function() {
-        //set window size, maybe good for responsive sizes
-        browser.driver.manage().window().setSize(1600, 800);
-
-    },
-
+    // Options to be passed to Jasmine-node.
     jasmineNodeOpts: {
-        showColors: true
+        showColors: true,
+        defaultTimeoutInterval: 30000
     }
 };
-
-//https://github.com/angular/protractor/blob/master/docs/referenceConf.js

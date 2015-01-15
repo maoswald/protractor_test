@@ -13,13 +13,16 @@ run-tests:
 run-test:
 	protractor tests/e2e/protractor.conf.js --suite $(S)
 
-run-drone-tests:
+run-tests-saucelabs:
+	protractor tests/e2e/protractor.saucelabs.conf.js
+
+drone-run-tests:
 	npm install protractor -g
 	webdriver-manager update
 	sudo start xvfb
 	protractor tests/e2e/protractor.drone.conf.js
 
-run-saucelabs-tests:
+drone-run-tests-saucelabs:
 	npm install protractor -g
 	webdriver-manager update
 	sudo start xvfb
