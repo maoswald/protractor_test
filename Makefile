@@ -13,7 +13,13 @@ run-tests:
 run-test:
 	protractor tests/e2e/protractor.conf.js --suite $(S)
 
+run-elementexplorer:
+	webdriver-manager start &
+	/usr/local/lib/node_modules/protractor/bin/elementexplorer.js http://localhost:8080
+
 run-tests-saucelabs:
+	export SAUCE_USERNAME=
+	export SAUCE_ACCESS_KEY=
 	protractor tests/e2e/protractor.saucelabs.conf.js
 
 drone-run-tests:
@@ -27,3 +33,5 @@ drone-run-tests-saucelabs:
 	webdriver-manager update
 	sudo start xvfb
 	protractor tests/e2e/protractor.saucelabs.conf.js
+
+

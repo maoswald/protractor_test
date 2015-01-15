@@ -1,4 +1,8 @@
 describe('angularjs homepage', function() {
+    beforeEach(function() {
+        isAngularSite(true); // isAngularSite(true), if it's an Angular app!
+    });
+
     it('should greet the named user', function() {
         browser.get('http://www.angularjs.org');
 

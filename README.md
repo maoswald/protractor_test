@@ -53,6 +53,12 @@ Start multiple test suites
 make run-test S=protractor,angular
 ```
 
+To find elements you can use the elementexplorer
+
+```
+make run-elementexplorer
+```
+
 ##CI
 
 To run on [Drone.io](https://drone.io/) add the following line as Command at drone.io
@@ -83,4 +89,9 @@ make drone-run-tests-saucelabs
 kill %1
 ```
 
+To Run sauce labs tests local you have to add your sauce labs credentials to the make file and then run
+
+```
+make run-tests-saucelabs
+```
 
