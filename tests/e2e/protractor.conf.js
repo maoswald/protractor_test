@@ -1,4 +1,6 @@
 exports.config = {
+    //base url where to start from
+    baseUrl: 'http://localhost:3000',
 
     capabilities: {
         'browserName': 'chrome'

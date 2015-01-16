@@ -17,9 +17,6 @@
 ###Config file:
 [Config file overview](https://github.com/angular/protractor/blob/master/docs/referenceConf.js)
 
-###Debugging
-[Debugging possibilities](https://github.com/angular/protractor/blob/master/docs/debugging.md)
-
 ##Setup
 ###Required
 
@@ -59,6 +56,12 @@ To find elements you can use the elementexplorer
 make run-elementexplorer
 ```
 
+If you want to use the elementexplorer without AngularJS pass this after starting
+
+```
+browser.ignoreSynchronization = true
+```
+
 ##CI
 
 To run on [Drone.io](https://drone.io/) add the following line as Command at drone.io
@@ -94,4 +97,104 @@ To Run sauce labs tests local you have to add your sauce labs credentials to the
 ```
 make run-tests-saucelabs
 ```
+
+##Protractor without AngularJS
+
+Pass this after the outer descripe block in every test
+
+```
+beforeEach(function() {
+	isAngularSite(false); // isAngularSite(true), if it's an Angular app!
+});
+```
+
+##How to use Protractor and test behaviors
+
+####Remember: Every test has to fail at least once!
+
+####To run just these tests rename (Jasmin style)
+
+```
+describe() -> ddescribe()
+it() -> iit()
+```
+
+###Protractor functions
+
+```
+protractor.wrapDriver
+
+protractor.By
+protractor.By.binding
+protractor.By.select
+protractor.By.selectedOption
+protractor.By.input
+protractor.By.repeater
+protractor.By.className
+protractor.By.class name
+protractor.By.css
+protractor.By.id
+protractor.By.js
+protractor.By.linkText
+protractor.By.link text
+protractor.By.name
+protractor.By.partialLinkText
+protractor.By.partial link text
+protractor.By.tagName
+protractor.By.tag name
+protractor.By.xpath
+```
+###Browser functions
+
+```
+browser.controlFlow
+browser.schedule
+browser.getSession
+browser.getCapability
+browser.quit
+browser.actions
+browser.executeScript
+browser.executeAsyncScript
+browser.call
+browser.wait
+browser.sleep
+browser.getWindowHandle
+browser.getAllWindowHandles
+browser.getPageSource
+browser.close
+browser.getCurrentUrl
+browser.getTitle
+browser.findDomElement_
+browser.isElementPresent
+browser.takeScreenshot
+browser.manage
+browser.navigate
+browser.switchTo
+browser.driver
+browser.baseUrl
+browser.moduleNames_
+browser.moduleScripts_
+browser.waitForAngular
+browser.findElement
+browser.findElements
+browser.addMockModule
+browser.clearMockModules
+browser.get
+```
+
+
+###Debugging
+[Debugging possibilities](https://github.com/angular/protractor/blob/master/docs/debugging.md)
+[AngularJS Protractor Doc](https://github.com/angular/protractor/blob/master/docs/debugging.md)
+
+To debug your code add
+
+```
+browser.pause()
+```
+
+
+
+
+
 

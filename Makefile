@@ -15,7 +15,7 @@ run-test:
 
 run-elementexplorer:
 	webdriver-manager start &
-	/usr/local/lib/node_modules/protractor/bin/elementexplorer.js http://localhost:8080
+	/usr/local/lib/node_modules/protractor/bin/elementexplorer.js http://localhost:3000
 
 run-tests-saucelabs:
 	export SAUCE_USERNAME=
