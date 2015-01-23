@@ -1,4 +1,6 @@
 exports.config = {
+    baseUrl: 'http://localhost:3000',
+
     chromeDriver: '/usr/local/bin/chromedriver',
 
     multiCapabilities: [

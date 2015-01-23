@@ -11,6 +11,8 @@
 
 [An Introduction to AngularJS End to End Testing with Protractor - Youtube](https://www.youtube.com/watch?v=idb6hOxlyb8)
 
+[Long Protractor Tutorial](http://thejackalofjavascript.com/end-to-end-testing-with-protractor/)
+
 ###Doc files:
 [Github](https://github.com/angular/protractor/tree/master/docs)
 
@@ -184,7 +186,6 @@ browser.get
 
 
 ###Debugging
-[Debugging possibilities](https://github.com/angular/protractor/blob/master/docs/debugging.md)
 [AngularJS Protractor Doc](https://github.com/angular/protractor/blob/master/docs/debugging.md)
 
 To debug your code add
@@ -192,9 +193,3 @@ To debug your code add
 ```
 browser.pause()
 ```
-
-
-
-
-
-
